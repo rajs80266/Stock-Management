@@ -71,6 +71,7 @@ const HomePage = () => {
         <button onClick={() => {}} className="ModalButton">Save Changes</button>
         <button onClick={closeEditModal} className="ModalButton cancel">Cancel</button>
       </Modal>
+      <button onClick={() => {}}>Add</button>
       <table>
         <thead>
           <tr>

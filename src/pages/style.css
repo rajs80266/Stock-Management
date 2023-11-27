@@ -23,7 +23,7 @@ table {
     background-color: #f9f9f9;
   }
   
-  td button {
+  td button, button {
     padding: 8px 12px;
     margin-right: 5px;
     cursor: pointer;
