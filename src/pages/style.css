@@ -1,0 +1,107 @@
+/* src/components/Table.css */
+body {
+    margin: 50px !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  td button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  td button.delete {
+    background-color: #f44336;
+  }
+  
+  td button:hover {
+    background-color: #45a049;
+  }
+  
+
+  /* src/components/Table.css */
+/* ... (previous styles) */
+
+/* Modal Styles */
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+  
+  .ReactModal__Content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 300px;
+    max-width: 80%;
+  }
+  
+  .ModalHeader {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .ModalLabel {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .ModalInput {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  
+  .ModalButton {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .ModalButton.cancel {
+    background-color: #f44336;
+    margin-right: 10px;
+  }
+  
