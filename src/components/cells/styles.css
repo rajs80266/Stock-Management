@@ -1,0 +1,55 @@
+.cell, .wall {
+    width: 49px;
+    height: 49px;
+    background-color: aquamarine;
+    padding: 5px;
+}
+
+.cell {
+    background-color: aquamarine;
+}
+
+.wall {
+    background-color: burlywood;
+}
+
+.stone-with-gradient {
+    position: relative;
+    display: inline-block; /* or block, depending on your layout needs */
+}
+  
+.stone-with-gradient img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.stone-with-gradient::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3));
+    border-radius: 50%;
+    /* This creates a vertical gradient overlay that fades from transparent to semi-transparent black */
+    pointer-events: none; /* Allows clicking through the overlay to the image below */
+}
+
+.stone {
+    width: 100%;
+}
+
+.car-vertical {
+    height: 50px;
+    position: relative;
+    bottom: 45px;
+    left: 10px;
+}
+
+.car-horizontal {
+    width: 50px;
+    position: relative;
+    bottom: 40px;
+}
